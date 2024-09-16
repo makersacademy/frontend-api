@@ -1,0 +1,23 @@
+body { 
+  background-color: #d35ce8;
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+  from {background-color: rgb(183, 1, 183);}
+  to {background-color: rgb(149, 0, 255);}
+}
+
+input:hover {
+  background-color: rgb(37, 219, 255);
+  color: rgb(136, 0, 154);
+}
+
+button:hover {
+  background-color: rgb(37, 219, 255);
+  color: rgb(136, 0, 154);
+}

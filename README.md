@@ -1,29 +1,21 @@
 # Chitter API Frontend Challenge
 
-* Feel free to use Google, your notes, books, etc. but work on your own
-* If you refer to the solution of another coach or student, please put a link to that in your README
-* If you have a partial solution, **still check in a partial solution**
-* You must submit a pull request to this repo with your code by 9am Monday morning
+## Challenge:
 
-Challenge:
--------
+Write a small Twitter clone that will allow the users to post messages to a public stream.
 
-As usual please start by forking this repo.
+The scenario is similar to the [Chitter Challenge](https://github.com/makersacademy/chitter-challenge), except someone has already built a backend API and hosted it on Heroku.
 
-We are going to write a small Twitter clone that will allow the users to post messages to a public stream.
+Task is to build a front-end single-page-app to interface with this API. Can do this in any framework, or in pure Javascript. [The API documentation is here.](https://github.com/makersacademy/chitter_api_backend)
 
-The scenario is similar to the [Chitter Challenge](https://github.com/makersacademy/chitter-challenge), except someone has already built a backend API for you and hosted it on Heroku.
+Here are some interactions the API supports:
 
-Your task is to build a front-end single-page-app to interface with this API. You can do this in any framework you like, or in pure Javascript. [The API documentation is here.](https://github.com/makersacademy/chitter_api_backend)
-
-Here are some interactions the API supports. Implement as many as you see fit.
-
-* Creating Users
+* Creating Users 
 * Logging in
-* Posting Peeps
-* Viewing all Peeps *(I suggest you start here)*
+* Posting Peeps [X]
+* Viewing all Peeps [X]
 * Viewing individual Peeps
-* Deleting Peeps
+* Deleting Peeps 
 * Liking Peeps
 * Unliking Peeps
 
@@ -35,3 +27,15 @@ Note that others may be doing the same task at the same time, so the data may ch
 
 * [The Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) for making requests.
 * [Postman](https://www.getpostman.com/) or [Insomnia](https://insomnia.rest/) for exploring the API.
+
+<br>
+
+## Set up project
+### In a terminal within the project directory run the following:
+1. Install required node modules using `npm install`
+2. Run `npm install -g esbuild` to bundle a javascript file
+3. In another terminal (in the same directory) run the command `npm run build` and keep this process running
+4. Use `open index.html` in the original terminal to open the webpage in your default browser
+
+## Conclusion:
+- Had issues trying to `npm run build` and had to copy a line from package.json from another exercise to make it work

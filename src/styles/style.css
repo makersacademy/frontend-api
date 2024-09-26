@@ -1,0 +1,156 @@
+/* Basic CSS Reset */
+body,
+div,
+h1,
+p,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Style the container elements */
+#peepsContainer,
+#createPeepContainer {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 2px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #0084ff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005999;
+}
+
+button:active {
+  background-color: #002d66;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content .peep-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-content .peep-header .peep-author {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.modal-content .peep-header .peep-timestamp {
+  color: #999;
+  font-size: 0.85em;
+}
+
+.modal-content .peep-body {
+  font-size: 1.2em;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.modal-content .peep-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#peepInput {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.peep {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Animation on hover */
+}
+
+.peep:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.peep-text {
+  /* Styling for the text inside a peep */
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>CHITTER</title>
+  </head>
+  <body>
+    <h1>Chitter</h1>
+    <div id="createPeepContainer">
+      <input type="text" id="peepInput" placeholder="Enter your peep" />
+      <button id="createPeepButton">Create Peep</button>
+    </div>
+    <div id="button-container">
+      <button id="signupButton">Signup</button>
+      <button id="loginButton">Login</button>
+      <button id="logoutButton">Logout</button>
+    </div>
+    <div id="peepsContainer"></div>
+
+    <!-- The Modal -->
+    <div id="peepModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="peep-header">
+          <p id="peepAuthor" class="peep-author"></p>
+          <p id="peepCreated" class="peep-timestamp"></p>
+        </div>
+        <p id="peepBody" class="peep-body"></p>
+        <div class="peep-actions">
+          <p id="peepLikes"></p>
+          <div>
+            <button id="likeButton">Like</button>
+            <button id="deletePeepButton" style="display: none">
+              Delete Peep
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="bundle.js"></script>
+  </body>
+</html>

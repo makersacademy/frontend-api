@@ -1,37 +1,63 @@
 # Chitter API Frontend Challenge
 
-* Feel free to use Google, your notes, books, etc. but work on your own
-* If you refer to the solution of another coach or student, please put a link to that in your README
-* If you have a partial solution, **still check in a partial solution**
-* You must submit a pull request to this repo with your code by 9am Monday morning
+This is a small Twitter clone that allows users to post messages to a public stream. The backend API is already provided and hosted on Heroku. The task is to build a front-end single-page application (SPA) to interface with the API.
 
-Challenge:
--------
+## Screenshot
 
-As usual please start by forking this repo.
+![](./public/screenshot.png)
 
-We are going to write a small Twitter clone that will allow the users to post messages to a public stream.
+## Ruby Version
 
-The scenario is similar to the [Chitter Challenge](https://github.com/makersacademy/chitter-challenge), except someone has already built a backend API for you and hosted it on Heroku.
+If you're interested in an alternative implementation of this project using Ruby, you can check out the [Ruby version](https://github.com/Shakhrai8/cyber-twitter).
 
-Your task is to build a front-end single-page-app to interface with this API. You can do this in any framework you like, or in pure Javascript. [The API documentation is here.](https://github.com/makersacademy/chitter_api_backend)
+The Ruby version includes both the backend and frontend components, and utilizes a database for data storage. It provides similar features to the JavaScript version, allowing users to create accounts, post peeps, view and delete peeps, and more. Feel free to explore and compare the two implementations.
 
-Here are some interactions the API supports. Implement as many as you see fit.
+## Features
 
-* Creating Users
-* Logging in
-* Posting Peeps
-* Viewing all Peeps *(I suggest you start here)*
-* Viewing individual Peeps
-* Deleting Peeps
-* Liking Peeps
-* Unliking Peeps
+The application includes the following features:
 
-We are looking for well tested, easy to read, easy to change code. This is more important than the number of interactions you implement.
+- Creating users
+- Logging in
+- Posting peeps
+- Viewing all peeps
+- Viewing individual peeps
+- Deleting peeps
+- Liking peeps
+- Unliking peeps
 
-Note that others may be doing the same task at the same time, so the data may change as you are using it.
+## Technologies Used
 
-## Utilities you might find useful
+The application has been developed using the following technologies:
 
-* [The Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) for making requests.
-* [Postman](https://www.getpostman.com/) or [Insomnia](https://insomnia.rest/) for exploring the API.
+- JavaScript
+- Jest (for testing)
+- HTML
+- CSS
+- Apis
+
+## Installation
+
+To run the application locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/Shakhrai8/frontend-api-challenge.git`
+2. Navigate to the project directory: `cd frontend-api-challenge`
+3. Install the dependencies: `npm install`
+4. Build the application: `npm run build`
+5. Open the application: Open the `index.html` file in your preferred browser.
+
+## Usage
+
+Once the application is running, you can perform the following actions:
+
+1. **Creating Users**: Use the provided user interface to sign up and create a new user account.
+2. **Logging In**: Use the provided user interface to log in to your account.
+3. **Posting Peeps**: Enter your peep text in the input field provided and click the "Post Peep" button to post a new peep.
+4. **Viewing All Peeps**: The application displays all the peeps in the public stream. Scroll through the peeps to view them.
+5. **Viewing Individual Peeps**: Click on a peep to view its details, such as the peep content, creation date, author, and number of likes.
+6. **Deleting Peeps**: If you are the owner of a peep, a delete button will be displayed when viewing the peep details. Click the delete button to remove the peep.
+7. **Liking Peeps**: When viewing the details of a peep, click the "Like" button to like the peep.
+8. **Unliking Peeps**: If you have already liked a peep, the "Like" button will be changed to "Unlike". Click the "Unlike" button to remove your like from the peep.
+
+## Testing
+
+The application has been thoroughly tested using Jest to ensure its functionality and reliability. To run the tests, execute the command `jest`.

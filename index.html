@@ -1,0 +1,47 @@
+<html>
+<head>
+<script type="text/javascript" src="myjavascript.js"></script>
+</head>
+<h1>Welcome to Chitter</h1>
+<br>
+<br>
+<p>Welcome to the Chitters</p>
+<br>
+<h2>Add User </h2>
+
+<input id="handleid" type="text" placeholder="Username" />
+<br>
+<input type="password" id="passwordid" placeholder="password" / >
+<br>
+<button type="button" onclick="AddUser()">Add User</button>
+<h3 id = "adduserresult">Add a new user result: </h3>
+
+
+<h2>Create Session (kay, mypassword) </h2>
+<input id="sessionUserName" type="text" placeholder="Username" />
+<br>
+<input type="password" id="sessionPassword" placeholder="password" / >
+<br>
+<button type="button" onclick="MakeSession()">Make Session </button>
+<h3 id = "addsessionresult">Add session result: </h3>
+<hr>
+
+<h2> Get Peeps With ID - try with id = 1 </h2>
+<label>Peeps Id:</label>
+<input type="text" id="peepsid"><br><br>
+<button type="button" onclick="GetPeepWithId()">Get Peeps With Id</button>
+<h3> Result </h3>
+<div id="peepIdResult"> </div>
+<hr>
+
+<h2> Get All Peeps </h2>
+<button type="button" onclick="GetUsers()">Get Users</button>
+<h3> Get Peep Results : </h3>
+<div id="getuserresult">
+</div>
+<hr>
+
+
+
+
+</html>
